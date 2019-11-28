@@ -1,6 +1,6 @@
 # ghostChat
 
-<img src="docs/media/ghost.png" title="Icon"></a>
+<img src="docs/media/thaghost.png" title="Icon"></a>
 
 ## Description
 
