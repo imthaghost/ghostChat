@@ -1,0 +1,1209 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from grayshift.io/themes/swipe/swipe.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Nov 2019 03:13:30 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Swipe - The Simplest Chat Platform</title>
+  <meta name="description" content="#">
+  <link rel="stylesheet" href="dist/css/grayshift.min.css">
+  <link rel="stylesheet" href="dist/css/swipe.min.css">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" integrity="sha384-AKT9MKPmIq4VMihDqOB6HeDHSsXGyf92WHPCSwHAZPIVJpD8Jv6dmfTLZeLDvV4O" crossorigin="anonymous">
+</head>
+<body>
+  <div class="d-flex flex-column flex-lg-row">
+    <nav class="navside navside-expand-lg sticky-top order-2 order-lg-0">
+      <div class="container">
+        <a class="d-none d-lg-inline" rel="home" href="#">
+          <i class="eva-xl" data-eva="github" data-eva-animation="pulse"></i>
+        </a>
+        <ul class="nav navside-nav" role="tablist" aria-orientation="vertical">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#channels" role="tab" aria-controls="channels" aria-selected="true">
+              <i class="eva-md" data-eva="message-square" data-eva-animation="pulse"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#friends" role="tab" aria-controls="friends" aria-selected="false">
+              <i class="eva-md" data-eva="people" data-eva-animation="pulse"></i>
+            </a>
+          </li>
+          <li class="nav-item flex-lg-grow-1">
+            <a class="nav-link" data-toggle="tab" href="#notifications" role="tab" aria-controls="notifications" aria-selected="false">
+              <i class="eva-md" data-eva="bell" data-eva-animation="pulse"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+              <i class="eva-md" data-eva="settings" data-eva-animation="pulse"></i>
+            </a>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="#">
+              <i class="eva-md" data-eva="bulb" data-eva-animation="pulse"></i>
+            </a>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <span class="avatar avatar-md status status-online h5 bg-primary rounded-circle">jd</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sidebar sidebar-expand-lg order-1 order-lg-0">
+      <div class="container py-5 px-lg-5">
+        <form>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <i data-eva="search"></i>
+            </div>
+            <input class="form-control form-control-lg" type="search" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="channels" role="tabpanel">
+            <ul class="nav nav-tabs nav-justified nav-sm mt-3" role="tablist" aria-orientation="horizontal">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#direct" role="tab" aria-controls="direct" aria-selected="true">Direct</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#groups" role="tab" aria-controls="groups" aria-selected="false">Groups</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center mt-5">
+              <h3 class="mr-3">Channels</h3>
+              <button class="btn btn-sm btn-circle btn-neutral" data-toggle="modal" data-target="#compose" type="button">
+                <i data-eva="edit-2" data-eva-width="20" data-eva-height="20"></i>
+              </button>
+            </div>
+            <hr class="mb-0">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="direct" role="tabpanel">
+                <div class="channel active">
+                  <span class="avatar avatar-sm status status-online mr-3 bg-primary rounded-circle">jd</span>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center mb-3">
+                      <h6 class="mr-auto">John Doe</h6>
+                      <p class="ml-3">Today</p>
+                    </div>
+                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                  </div>
+                </div>
+                <div class="channel">
+                  <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center mb-3">
+                      <h6 class="mr-auto">John Doe</h6>
+                      <p class="ml-3">Sunday</p>
+                    </div>
+                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                  </div>
+                </div>
+                <div class="channel">
+                  <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center mb-3">
+                      <h6 class="mr-auto">John Doe</h6>
+                      <p class="ml-3">Saturday</p>
+                    </div>
+                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                  </div>
+                </div>
+                <div class="channel">
+                  <span class="avatar avatar-sm status status-offline mr-3 bg-warning rounded-circle">jd</span>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center mb-3">
+                      <h6 class="mr-auto">John Doe</h6>
+                      <p class="ml-3">Friday</p>
+                    </div>
+                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                  </div>
+                </div>
+                <div class="channel">
+                  <span class="avatar avatar-sm status status-offline mr-3 bg-danger rounded-circle">jd</span>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center mb-3">
+                      <h6 class="mr-auto">John Doe</h6>
+                      <p class="ml-3">Thursday</p>
+                    </div>
+                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                  </div>
+                </div>
+                <div class="channel">
+                  <span class="avatar avatar-sm status status-offline mr-3 bg-primary rounded-circle">jd</span>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center mb-3">
+                      <h6 class="mr-auto">John Doe</h6>
+                      <p class="ml-3">Wednesday</p>
+                    </div>
+                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                  </div>
+                </div>
+                <div class="channel">
+                  <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center mb-3">
+                      <h6 class="mr-auto">John Doe</h6>
+                      <p class="ml-3">Tuesday</p>
+                    </div>
+                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                  </div>
+                </div>
+                <div class="channel">
+                  <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center mb-3">
+                      <h6 class="mr-auto">John Doe</h6>
+                      <p class="ml-3">Monday</p>
+                    </div>
+                    <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="groups" role="tabpanel">
+                <div class="channel flex-column">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="avatar avatar-xs mr-3 bg-primary rounded-circle">s</span>
+                    <h6 class="mr-auto">Squad Ghouls</h6>
+                    <p class="ml-3">Today</p>
+                  </div>
+                  <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="channel flex-column">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="avatar avatar-xs mr-3 bg-success rounded-circle">s</span>
+                    <h6 class="mr-auto">Squad Ghouls</h6>
+                    <p class="ml-3">Sunday</p>
+                  </div>
+                  <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="channel flex-column">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="avatar avatar-xs mr-3 bg-info rounded-circle">s</span>
+                    <h6 class="mr-auto">Squad Ghouls</h6>
+                    <p class="ml-3">Saturday</p>
+                  </div>
+                  <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="channel flex-column">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="avatar avatar-xs mr-3 bg-warning rounded-circle">s</span>
+                    <h6 class="mr-auto">Squad Ghouls</h6>
+                    <p class="ml-3">Friday</p>
+                  </div>
+                  <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="channel flex-column">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="avatar avatar-xs mr-3 bg-danger rounded-circle">s</span>
+                    <h6 class="mr-auto">Squad Ghouls</h6>
+                    <p class="ml-3">Thursday</p>
+                  </div>
+                  <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="channel flex-column">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="avatar avatar-xs mr-3 bg-primary rounded-circle">s</span>
+                    <h6 class="mr-auto">Squad Ghouls</h6>
+                    <p class="ml-3">Wednesday</p>
+                  </div>
+                  <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="channel flex-column">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="avatar avatar-xs mr-3 bg-success rounded-circle">s</span>
+                    <h6 class="mr-auto">Squad Ghouls</h6>
+                    <p class="ml-3">Tuesday</p>
+                  </div>
+                  <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+                <div class="channel flex-column">
+                  <div class="d-flex align-items-center mb-3">
+                    <span class="avatar avatar-xs mr-3 bg-info rounded-circle">s</span>
+                    <h6 class="mr-auto">Squad Ghouls</h6>
+                    <p class="ml-3">Monday</p>
+                  </div>
+                  <p class="text">The quick brown fox jumps over the lazy dog.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="friends" role="tabpanel">
+            <h3 class="my-5">Friends</h3>
+            <hr class="mb-0">
+            <div class="channel">
+              <span class="avatar avatar-sm status status-online mr-3 bg-primary rounded-circle">jd</span>
+              <div class="mr-auto">
+                <h6 class="mb-2 lh-100">John Doe</h6>
+                <p class="lh-100">Manhattan</p>
+              </div>
+              <i class="align-self-center ml-3" data-eva="person"></i>
+            </div>
+            <div class="channel">
+              <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+              <div class="mr-auto">
+                <h6 class="mb-2 lh-100">John Doe</h6>
+                <p class="lh-100">Manhattan</p>
+              </div>
+              <i class="align-self-center ml-3" data-eva="person"></i>
+            </div>
+            <div class="channel">
+              <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+              <div class="mr-auto">
+                <h6 class="mb-2 lh-100">John Doe</h6>
+                <p class="lh-100">Manhattan</p>
+              </div>
+              <i class="align-self-center ml-3" data-eva="person"></i>
+            </div>
+            <div class="channel">
+              <span class="avatar avatar-sm status status-offline mr-3 bg-warning rounded-circle">jd</span>
+              <div class="mr-auto">
+                <h6 class="mb-2 lh-100">John Doe</h6>
+                <p class="lh-100">Manhattan</p>
+              </div>
+              <i class="align-self-center ml-3" data-eva="person"></i>
+            </div>
+            <div class="channel">
+              <span class="avatar avatar-sm status status-offline mr-3 bg-danger rounded-circle">jd</span>
+              <div class="mr-auto">
+                <h6 class="mb-2 lh-100">John Doe</h6>
+                <p class="lh-100">Manhattan</p>
+              </div>
+              <i class="align-self-center ml-3" data-eva="person"></i>
+            </div>
+            <div class="channel">
+              <span class="avatar avatar-sm status status-offline mr-3 bg-primary rounded-circle">jd</span>
+              <div class="mr-auto">
+                <h6 class="mb-2 lh-100">John Doe</h6>
+                <p class="lh-100">Manhattan</p>
+              </div>
+              <i class="align-self-center ml-3" data-eva="person"></i>
+            </div>
+            <div class="channel">
+              <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+              <div class="mr-auto">
+                <h6 class="mb-2 lh-100">John Doe</h6>
+                <p class="lh-100">Manhattan</p>
+              </div>
+              <i class="align-self-center ml-3" data-eva="person"></i>
+            </div>
+            <div class="channel">
+              <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+              <div class="mr-auto">
+                <h6 class="mb-2 lh-100">John Doe</h6>
+                <p class="lh-100">Manhattan</p>
+              </div>
+              <i class="align-self-center ml-3" data-eva="person"></i>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="notifications" role="tabpanel">
+            <h3 class="my-5">Notifications</h3>
+            <hr class="mb-0">
+            <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+              <span class="icon mr-3 bg-neutral rounded-circle">
+                <i data-eva="person-done" data-eva-width="20" data-eva-height="20"></i>
+              </span>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+              <div class="icon mr-3 bg-neutral rounded-circle">
+                <i data-eva="lock" data-eva-width="20" data-eva-height="20"></i>
+              </div>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+              <span class="icon mr-3 bg-neutral rounded-circle">
+                <i data-eva="attach" data-eva-width="20" data-eva-height="20"></i>
+              </span>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+              <span class="icon mr-3 bg-neutral rounded-circle">
+                <i data-eva="gift" data-eva-width="20" data-eva-height="20"></i>
+              </span>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+              <span class="icon mr-3 bg-neutral rounded-circle">
+                <i data-eva="video" data-eva-width="20" data-eva-height="20"></i>
+              </span>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+              <span class="icon mr-3 bg-neutral rounded-circle">
+                <i data-eva="heart" data-eva-width="20" data-eva-height="20"></i>
+              </span>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+              <span class="icon mr-3 bg-neutral rounded-circle">
+                <i data-eva="calendar" data-eva-width="20" data-eva-height="20"></i>
+              </span>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class="d-flex align-items-center align-items-lg-start py-5 border-bottom">
+              <span class="icon mr-3 bg-neutral rounded-circle">
+                <i data-eva="flag" data-eva-width="20" data-eva-height="20"></i>
+              </span>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="settings" role="tabpanel">
+            <h3 class="my-5">Settings</h3>
+            <hr class="mb-0">
+            <div id="accordionOne">
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                  <div class="mr-auto">
+                    <h6 class="mb-1 lh-150">My Account</h6>
+                    <p>Configure your preferences.</p>
+                  </div>
+                  <i data-eva="arrow-ios-forward"></i>
+                  <i data-eva="arrow-ios-downward"></i>
+                </div>
+                <div class="collapse" id="collapseOne" data-parent="#accordionOne" aria-labelledby="headingOne">
+                  <div class="accordion-body">
+                    <form>
+                      <label for="name">Name</label>
+                      <input class="form-control form-control-lg mb-5" id="name" type="text" placeholder="Name">
+                      <label for="email">Email</label>
+                      <input class="form-control form-control-lg mb-5" id="email" type="email" placeholder="Email Address">
+                      <label for="address">Address</label>
+                      <input class="form-control form-control-lg mb-5" id="address" type="text" placeholder="Address">
+                      <label for="biography">Biography</label>
+                      <textarea class="form-control mb-5" id="biography" rows="3" placeholder="Tell us a little about yourself"></textarea>
+                      <button class="btn btn-block btn-lg btn-primary" type="submit">Apply changes</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                  <div class="mr-auto">
+                    <h6 class="mb-1 lh-150">Privacy & Safety</h6>
+                    <p>Configure your preferences.</p>
+                  </div>
+                  <i data-eva="arrow-ios-forward"></i>
+                  <i data-eva="arrow-ios-downward"></i>
+                </div>
+                <div class="collapse" id="collapseTwo" data-parent="#accordionOne" aria-labelledby="headingTwo">
+                  <div class="accordion-body">
+                    <form>
+                      <label for="currentPassword">Current Password</label>
+                      <input class="form-control form-control-lg mb-5" id="currentPassword" type="password" placeholder="Current Password">
+                      <label for="newPassword">New Password</label>
+                      <input class="form-control form-control-lg mb-5" id="newPassword" type="password" placeholder="New Password">
+                      <label for="repeatPassword">Repeat Password</label>
+                      <input class="form-control form-control-lg mb-5" id="repeatPassword" type="password" placeholder="Repeat Password">
+                      <button class="btn btn-block btn-lg btn-primary" type="submit">Apply changes</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                  <div class="mr-auto">
+                    <h6 class="mb-1 lh-150">Notifications</h6>
+                    <p>Configure your preferences.</p>
+                  </div>
+                  <i data-eva="arrow-ios-forward"></i>
+                  <i data-eva="arrow-ios-downward"></i>
+                </div>
+                <div class="collapse" id="collapseThree" data-parent="#accordionOne" aria-labelledby="headingThree">
+                  <div class="accordion-body">
+                    <form>
+                      <div class="d-flex align-items-center mb-3">
+                        <h6 class="mr-auto lh-150">Action</h6>
+                        <div class="form-check form-switch h3">
+                          <input class="form-check-input" id="switchOne" type="checkbox" checked>
+                          <label class="sr-only" for="switchOne">Switch</label>
+                        </div>
+                      </div>
+                      <p>The quick brown fox jumps over the lazy dog.</p>
+                      <hr>
+                      <div class="d-flex align-items-center mb-3">
+                        <h6 class="mr-auto lh-150">Another action</h6>
+                        <div class="form-check form-switch h3">
+                          <input class="form-check-input" id="switchTwo" type="checkbox">
+                          <label class="sr-only" for="switchTwo">Switch</label>
+                        </div>
+                      </div>
+                      <p>The quick brown fox jumps over the lazy dog.</p>
+                      <hr>
+                      <div class="d-flex align-items-center mb-3">
+                        <h6 class="mr-auto lh-150">Something else here</h6>
+                        <div class="form-check form-switch h3">
+                          <input class="form-check-input" id="switchThree" type="checkbox">
+                          <label class="sr-only" for="switchThree">Switch</label>
+                        </div>
+                      </div>
+                      <p>The quick brown fox jumps over the lazy dog.</p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingFour" data-toggle="collapse" data-target="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">
+                  <div class="mr-auto">
+                    <h6 class="mb-1 lh-150">Integrations</h6>
+                    <p>Configure your preferences.</p>
+                  </div>
+                  <i data-eva="arrow-ios-forward"></i>
+                  <i data-eva="arrow-ios-downward"></i>
+                </div>
+                <div class="collapse" id="collapseFour" data-parent="#accordionOne" aria-labelledby="headingFour">
+                  <div class="accordion-body">
+                    <div class="card mb-3">
+                      <div class="card-body d-flex">
+                        <span class="icon mr-3 bg-primary rounded-circle">
+                          <i class="fill-white" data-eva="google"></i>
+                        </span>
+                        <div>
+                          <h6 class="mb-2 lh-100">Google</h6>
+                          <p class="lh-100">Read, write, edit</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-body d-flex">
+                        <span class="icon mr-3 bg-success rounded-circle">
+                          <i class="fill-white" data-eva="facebook"></i>
+                        </span>
+                        <div>
+                          <h6 class="mb-2 lh-100">Facebook</h6>
+                          <p class="lh-100">Read, write, edit</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="card-body d-flex">
+                        <span class="icon mr-3 bg-info rounded-circle">
+                          <i class="fill-white" data-eva="twitter"></i>
+                        </span>
+                        <div>
+                          <h6 class="mb-2 lh-100">Twitter</h6>
+                          <p class="lh-100">No permissions set</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-body d-flex">
+                        <span class="icon mr-3 bg-warning rounded-circle">
+                          <i class="fill-white" data-eva="linkedin"></i>
+                        </span>
+                        <div>
+                          <h6 class="mb-2 lh-100">LinkedIn</h6>
+                          <p class="lh-100">No permissions set</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseFive">
+                  <div class="mr-auto">
+                    <h6 class="mb-1 lh-150">Appearance</h6>
+                    <p>Configure your preferences.</p>
+                  </div>
+                  <i data-eva="arrow-ios-forward"></i>
+                  <i data-eva="arrow-ios-downward"></i>
+                </div>
+                <div class="collapse" id="collapseFive" data-parent="#accordionOne" aria-labelledby="headingFive">
+                  <div class="accordion-body">
+                    <form>
+                      <div class="d-flex align-items-center mb-3">
+                        <h6 class="mr-auto lh-150">Action</h6>
+                        <div class="form-check form-switch h3">
+                          <input class="form-check-input" id="switchFour" type="checkbox">
+                          <label class="sr-only" for="switchFour">Switch</label>
+                        </div>
+                      </div>
+                      <p>The quick brown fox jumps over the lazy dog.</p>
+                    </form>
+                  </div>
+                </div>
+                <hr class="my-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="compose" tabindex="-1" role="dialog" aria-labelledby="composeLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 id="composeLabel">Compose</h4>
+            <button class="btn btn-sm btn-circle btn-neutral align-self-start" data-dismiss="modal" type="button" aria-label="Close">
+              <i data-eva="close" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <ul class="nav nav-tabs nav-justified p-3 px-sm-5 rounded-0" role="tablist" aria-orientation="horizontal">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true">Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#members" role="tab" aria-controls="members" aria-selected="false">Members</a>
+              </li>
+            </ul>
+            <div class="px-3 py-5 px-sm-5">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="details" role="tabpanel">
+                  <form>
+                    <label for="subject">Subject</label>
+                    <input class="form-control form-control-lg mb-5" id="subject" type="text" placeholder="What's the subject?">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Hmm, are you friendly?"></textarea>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="members" role="tabpanel">
+                  <form>
+                    <div class="input-group mb-5">
+                      <div class="input-group-prepend">
+                        <i data-eva="funnel-outline"></i>
+                      </div>
+                      <input class="form-control form-control-lg" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                  </form>
+                  <h3>Members</h3>
+                  <hr class="mb-0">
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-online mr-3 bg-primary rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="form-check align-self-center ml-3">
+                      <input class="form-check-input" id="checkboxOne" type="checkbox">
+                      <label class="sr-only" for="checkboxOne">Checkbox</label>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="form-check align-self-center ml-3">
+                      <input class="form-check-input" id="checkboxTwo" type="checkbox">
+                      <label class="sr-only" for="checkboxTwo">Checkbox</label>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="form-check align-self-center ml-3">
+                      <input class="form-check-input" id="checkboxThree" type="checkbox">
+                      <label class="sr-only" for="checkboxThree">Checkbox</label>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-warning rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="form-check align-self-center ml-3">
+                      <input class="form-check-input" id="checkboxFour" type="checkbox">
+                      <label class="sr-only" for="checkboxFour">Checkbox</label>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-danger rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="form-check align-self-center ml-3">
+                      <input class="form-check-input" id="checkboxFive" type="checkbox">
+                      <label class="sr-only" for="checkboxFive">Checkbox</label>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-primary rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="form-check align-self-center ml-3">
+                      <input class="form-check-input" id="checkboxSix" type="checkbox">
+                      <label class="sr-only" for="checkboxSix">Checkbox</label>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="form-check align-self-center ml-3">
+                      <input class="form-check-input" id="checkboxSeven" type="checkbox">
+                      <label class="sr-only" for="checkboxSeven">Checkbox</label>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="form-check align-self-center ml-3">
+                      <input class="form-check-input" id="checkboxEight" type="checkbox">
+                      <label class="sr-only" for="checkboxEight">Checkbox</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-block btn-lg btn-primary" type="submit">Compose</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="flex-lg-grow-1">
+      <div class="chat chat-offcanvas open">
+        <div class="d-flex">
+          <div class="flex-grow-1">
+            <div class="container px-lg-5">
+              <div class="chat-header">
+                <div class="d-flex mr-auto">
+                  <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                  <div>
+                    <h6 class="mb-2 lh-100">John Doe</h6>
+                    <p class="lh-100">Manhattan</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <button class="btn d-none d-xl-inline-block" data-toggle="modal" data-target="#call" type="button">
+                    <i class="eva-md" data-eva="video" data-eva-animation="pulse"></i>
+                  </button>
+                  <button class="btn d-none d-xl-inline-block ml-5" data-toggle="modal" data-target="#call" type="button">
+                    <i class="eva-md" data-eva="phone-call" data-eva-animation="pulse"></i>
+                  </button>
+                  <button class="btn d-lg-none ml-5" data-toggle="chat-offcanvas" type="button">
+                    <i class="eva-md" data-eva="arrow-circle-left" data-eva-animation="pulse"></i>
+                  </button>
+                  <button class="btn d-none d-xl-inline-block ml-5" type="button">
+                    <i class="eva-md" data-eva="people" data-eva-animation="pulse"></i>
+                  </button>
+                  <div class="dropdown d-xl-none ml-5">
+                    <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                      <i class="eva-md" data-eva="settings-2" data-eva-animation="pulse"></i>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <button class="dropdown-item" data-toggle="modal" data-target="#call" type="button">Video call</button>
+                      <button class="dropdown-item" data-toggle="modal" data-target="#call" type="button">Voice call</button>
+                      <button class="dropdown-item" type="button">Members</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="chat-body">
+                <div class="py-5">
+                  <div class="d-flex align-items-end mb-5">
+                    <span class="avatar avatar-sm mr-3 bg-info rounded-circle">jd</span>
+                    <div>
+                      <div class="card mb-3">
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                      </div>
+                      <p class="lh-100">Monday</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-end justify-content-end mb-5">
+                    <span class="avatar avatar-sm order-2 ml-3 bg-primary rounded-circle">jd</span>
+                    <div class="order-1">
+                      <div class="card mb-3 text-white bg-primary">
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                      </div>
+                      <p class="lh-100 text-right">Tuesday</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-end mb-5">
+                    <span class="avatar avatar-sm mr-3 bg-info rounded-circle rounded-circle">jd</span>
+                    <div>
+                      <div class="card mb-3">
+                        <span class="icon bg-info rounded-circle mr-3">
+                          <i class="fill-white" data-eva="archive" data-eva-width="20" data-eva-height="20"></i>
+                        </span>
+                        <div>
+                          <h6 class="mb-2 lh-100">
+                            <a href="#">archive</a>
+                          </h6>
+                          <p class="lh-100">40kb</p>
+                        </div>
+                      </div>
+                      <p class="lh-100">Wednesday</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-end justify-content-end mb-5">
+                    <span class="avatar avatar-sm order-2 ml-3 bg-primary rounded-circle">jd</span>
+                    <div class="order-1">
+                      <div class="card mb-3 text-white bg-primary">
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                      </div>
+                      <p class="lh-100 text-right">Thursday</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-end mb-5">
+                    <span class="avatar avatar-sm mr-3 bg-info rounded-circle">jd</span>
+                    <div>
+                      <div class="card mb-3">
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                      </div>
+                      <p class="lh-100">Friday</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-end justify-content-end mb-5">
+                    <span class="avatar avatar-sm order-2 ml-3 bg-primary rounded-circle">jd</span>
+                    <div class="order-1">
+                      <div class="card mb-3 text-white bg-primary">
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                      </div>
+                      <p class="lh-100 text-right">Saturday</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-end mb-5">
+                    <span class="avatar avatar-sm mr-3 bg-info rounded-circle">jd</span>
+                    <div>
+                      <div class="card mb-3">
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                      </div>
+                      <p class="lh-100">Sunday</p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-end justify-content-end">
+                    <span class="avatar avatar-sm order-2 ml-3 bg-primary rounded-circle">jd</span>
+                    <div class="order-1">
+                      <div class="card mb-3 text-white bg-primary">
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                      </div>
+                      <p class="lh-100 text-right">Today</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="chat-footer">
+                <form>
+                  <div class="input-group">
+                    <input class="form-control form-control-lg" placeholder="Type message..." autofocus>
+                    <div class="input-group-append">
+                      <button class="btn" type="submit">
+                        <i data-eva="paper-plane" data-eva-animation="pulse"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <button class="btn btn-circle btn-neutral sidebar-toggler" data-toggle="sidebar-offcanvas">
+              <i class="ml-n3" data-eva="chevron-left"></i>
+            </button>
+          </div>
+          <div class="sidebar sidebar-expand-lg sidebar-offcanvas z-index-high vh-100">
+            <div class="container py-5 px-lg-5">
+              <div class="d-flex align-items-center mb-5">
+                <h3 class="mr-auto">Sidebar</h3>
+                <button class="btn btn-sm btn-circle btn-neutral" data-toggle="sidebar-offcanvas" type="button">
+                  <i data-eva="close"></i>
+                </button>
+              </div>
+              <ul class="nav nav-tabs nav-justified nav-sm mb-5" role="tablist" aria-orientation="horizontal">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#users" role="tab" aria-controls="users" aria-selected="true">Users</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#files" role="tab" aria-controls="files" aria-selected="false">Files</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="users" role="tabpanel">
+                  <hr class="my-0">
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-online mr-3 bg-primary rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="dropdown align-self-center ml-3">
+                      <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i data-eva="more-vertical"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="dropdown align-self-center ml-3">
+                      <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i data-eva="more-vertical"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="dropdown align-self-center ml-3">
+                      <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i data-eva="more-vertical"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-warning rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="dropdown align-self-center ml-3">
+                      <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i data-eva="more-vertical"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-danger rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="dropdown align-self-center ml-3">
+                      <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i data-eva="more-vertical"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-primary rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="dropdown align-self-center ml-3">
+                      <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i data-eva="more-vertical"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-success rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="dropdown align-self-center ml-3">
+                      <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i data-eva="more-vertical"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex py-5 border-bottom">
+                    <span class="avatar avatar-sm status status-offline mr-3 bg-info rounded-circle">jd</span>
+                    <div class="mr-auto">
+                      <h6 class="mb-2 lh-100">John Doe</h6>
+                      <p class="lh-100">Manhattan</p>
+                    </div>
+                    <div class="dropdown align-self-center ml-3">
+                      <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i data-eva="more-vertical"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="files" role="tabpanel">
+                  <label class="w-100">
+                    <input class="d-none" type="file">
+                    <span class="dropzone">Drag & drop files here</span>
+                  </label>
+                  <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+                      <span class="icon bg-neutral border rounded-circle">
+                        <i data-eva="file-text" data-eva-width="20" data-eva-height="20"></i>
+                      </span>
+                      <span class="avatar avatar-sm bg-primary mr-3 ml-n3 border rounded-circle">jd</span>
+                      <div class="mr-auto">
+                        <h6 class="mb-2 lh-100">
+                          <a href="#">text</a>
+                        </h6>
+                        <p class="lh-100">8kb</p>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <i data-eva="more-vertical"></i>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+                      <span class="icon bg-neutral border rounded-circle">
+                        <i data-eva="image-2" data-eva-width="20" data-eva-height="20"></i>
+                      </span>
+                      <span class="avatar avatar-sm bg-success mr-3 ml-n3 border rounded-circle">jd</span>
+                      <div class="mr-auto">
+                        <h6 class="mb-2 lh-100">
+                          <a href="#">image</a>
+                        </h6>
+                        <p class="lh-100">16kb</p>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <i data-eva="more-vertical"></i>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+                      <span class="icon bg-neutral border rounded-circle">
+                        <i data-eva="film" data-eva-width="20" data-eva-height="20"></i>
+                      </span>
+                      <span class="avatar avatar-sm bg-info mr-3 ml-n3 border rounded-circle">jd</span>
+                      <div class="mr-auto">
+                        <h6 class="mb-2 lh-100">
+                          <a href="#">video</a>
+                        </h6>
+                        <p class="lh-100">24kb</p>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <i data-eva="more-vertical"></i>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+                      <span class="icon bg-neutral border rounded-circle">
+                        <i data-eva="folder" data-eva-width="20" data-eva-height="20"></i>
+                      </span>
+                      <span class="avatar avatar-sm bg-warning mr-3 ml-n3 border rounded-circle">jd</span>
+                      <div class="mr-auto">
+                        <h6 class="mb-2 lh-100">
+                          <a href="#">folder</a>
+                        </h6>
+                        <p class="lh-100">32kb</p>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <i data-eva="more-vertical"></i>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+                      <span class="icon bg-neutral border rounded-circle">
+                        <i data-eva="archive" data-eva-width="20" data-eva-height="20"></i>
+                      </span>
+                      <span class="avatar avatar-sm bg-danger mr-3 ml-n3 border rounded-circle">jd</span>
+                      <div class="mr-auto">
+                        <h6 class="mb-2 lh-100">
+                          <a href="#">archive</a>
+                        </h6>
+                        <p class="lh-100">40kb</p>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <i data-eva="more-vertical"></i>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+                      <span class="icon bg-neutral border rounded-circle">
+                        <i data-eva="file-text" data-eva-width="20" data-eva-height="20"></i>
+                      </span>
+                      <span class="avatar avatar-sm bg-primary mr-3 ml-n3 border rounded-circle">jd</span>
+                      <div class="mr-auto">
+                        <h6 class="mb-2 lh-100">
+                          <a href="#">text</a>
+                        </h6>
+                        <p class="lh-100">48kb</p>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <i data-eva="more-vertical"></i>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-body d-flex align-items-center">
+                      <span class="icon bg-neutral border rounded-circle">
+                        <i data-eva="image-2" data-eva-width="20" data-eva-height="20"></i>
+                      </span>
+                      <span class="avatar avatar-sm bg-success mr-3 ml-n3 border rounded-circle">jd</span>
+                      <div class="mr-auto">
+                        <h6 class="mb-2 lh-100">
+                          <a href="#">image</a>
+                        </h6>
+                        <p class="lh-100">56kb</p>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <i data-eva="more-vertical"></i>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-body d-flex align-items-center">
+                      <span class="icon bg-neutral border rounded-circle">
+                        <i data-eva="film" data-eva-width="20" data-eva-height="20"></i>
+                      </span>
+                      <span class="avatar avatar-sm bg-info mr-3 ml-n3 border rounded-circle">jd</span>
+                      <div class="mr-auto">
+                        <h6 class="mb-2 lh-100">
+                          <a href="#">video</a>
+                        </h6>
+                        <p class="lh-100">64kb</p>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                          <i data-eva="more-vertical"></i>
+                          <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal fade" id="call" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content d-flex flex-column justify-content-between bg-neutral" style="height: 504px; background-image: url('dist/img/selfie.jpg'); background-position: center; background-size: cover;">
+          <div class="modal-header">
+            <span class="badge fw-600 text-white text-uppercase bg-danger">Live</span>
+            <button class="btn btn-circle frosted-glass" type="button">
+              <i class="fill-white" data-eva="expand"></i>
+            </button>
+          </div>
+          <div class="modal-footer text-center">
+            <div class="d-inline-flex p-3 mx-auto frosted-glass rounded">
+              <button class="btn mr-5" type="button">
+                <i class="fill-white" data-eva="mic" data-eva-width="28" data-eva-height="28" data-eva-animation="pulse"></i>
+              </button>
+              <button class="btn mr-5" type="button">
+                <i class="fill-white" data-eva="video" data-eva-width="28" data-eva-height="28" data-eva-animation="pulse"></i>
+              </button>
+              <button class="btn mr-5" type="button">
+                <i class="fill-white" data-eva="volume-up" data-eva-width="28" data-eva-height="28" data-eva-animation="pulse"></i>
+              </button>
+              <button class="btn btn-circle btn-danger rounded" type="button">
+                <i class="fill-white" data-eva="phone" data-eva-width="28" data-eva-height="28"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/eva-icons@1.1.2/eva.min.js" integrity="sha384-evc6xuruZOLSxcDYJOMhN4pnuWv2x1hHaVU9m0os+cvprT9Gg1sgClT+EM4n/ng9" crossorigin="anonymous"></script>
+  <script src="dist/js/offcanvas.min.js"></script>
+  <script>
+  eva.replace()
+  </script>
+</body>
+
+<!-- Mirrored from grayshift.io/themes/swipe/swipe.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Nov 2019 03:13:35 GMT -->
+</html>
