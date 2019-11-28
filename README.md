@@ -1,19 +1,35 @@
-# Data Science Team!
+# ghostChat
+
+<img src="docs/media/ghost.png" title="Icon"></a>
+
+## Description
+
+For people who want anonymity in a chat server without having to waste time configuring your computer. ghostChat provides onion routing configuration while establishing intial connection via clearnet.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```bash
+- Pipenv
+- Python 3.4+
+- postgreSQL
+```
 
 ## Getting Started
 
+### mac OS Mojave-Catalina
+
 ```bash
 # clone the repo
-git clone https://github.com/MAP-Team/data-science.git
-# start the virtual enviornment instance
-pipenv shell
-# install the dependant modules
-pipenv install
-# start facial detection
-python3 track.py
+git clone https://github.com/imthaghost/ghostChat
+# change into ghostChat directory
+cd ghostChat
+# instantiate postgre database
+brew services start postgresql
+# start django server
+python3 manage.py runserver
 ```
-
-![Example](/media/test.png)
 
 ## Todo
 
