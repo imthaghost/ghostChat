@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to ghostChat 👋</h1>
+<img align="center" src="docs/media/icon.png" title="Icon"></a>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
-  <img src="docs/media/icon.png" title="Icon"></a>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
@@ -11,13 +11,13 @@
 
 ### 🏠 [Homepage](https://github.com/imthaghost/ghostChat)
 
-# ghostChat
+<!-- # ghostChat
 
 <img src="docs/media/icon.png" title="Icon"></a>
 
 ## Description
 
-Offering anonymous chatting services for people do not want to waste time configuring computer settings. ghostChat provides [Onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>).
+Offering anonymous chatting services for people do not want to waste time configuring computer settings. ghostChat provides [Onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>). -->
 
 ### Prerequisites
 
