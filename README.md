@@ -1,3 +1,16 @@
+<h1 align="center">Welcome to ghostChat 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
+  <img src="docs/media/icon.png" title="Icon"></a>
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
+
+> Offering anonymous chatting services for people do not want to waste time configuring computer settings. ghostChat provides Onion routing configuration while establishing intial connection via clearnet.
+
+### 🏠 [Homepage](https://github.com/imthaghost/ghostChat)
+
 # ghostChat
 
 <img src="docs/media/icon.png" title="Icon"></a>
@@ -102,6 +115,16 @@ I'm again borrowing these from [Facebook's Guidelines](https://github.com/facebo
 
 By contributing, you agree that your contributions will be licensed under its MIT License.
 
-## Authors
+## Author
 
--   **Gary Frederick** - _Contributor_ - [imthaghost](https://github.com/imthaghost)
+👤 **Gary Frederick**
+
+-   Github: [@imthaghost](https://github.com/imthaghost)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+<a href="https://www.patreon.com/imthaghost">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
