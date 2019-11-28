@@ -1,10 +1,10 @@
 # ghostChat
 
-<img src="docs/media/small.png" title="Icon"></a>
+<img src="docs/media/icon.png" title="Icon"></a>
 
 ## Description
 
-For people who want anonymity in a chat server without having to waste time configuring your computer. ghostChat provides onion routing configuration while establishing intial connection via clearnet.
+Offering anonymous chatting services for people do not want to waste time configuring computer settings. ghostChat provides [Onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>).
 
 ### Prerequisites
 
@@ -42,7 +42,7 @@ python3 manage.py runserver
 
 -   [Django](https://www.djangoproject.com/) - Web Framework used
 
-# Contribution Guidlines
+## Contribution Guidlines
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
@@ -60,7 +60,7 @@ We use github to host code, to track issues and feature requests, as well as acc
 
 Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
 
-1. Clone the repo and create your branch from `master`.
+1. Fork the repo and create your branch from `master`.
 2. If you've added code that should be tested, add tests.
 3. If you've changed APIs, update the documentation.
 4. Ensure the test suite passes.
