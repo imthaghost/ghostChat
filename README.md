@@ -1,6 +1,11 @@
 <h1 align="center">Welcome to ghostChat 👋</h1>
 <img align="center" src="docs/media/icon.png" title="Icon"></a>
 <p>
+    <a href="https://www.npmjs.com/package/readme-md-generator">
+    <img alt="downloads" src="https://img.shields.io/github/contributors/imthaghost/ghostChat?color=green" target="_blank" />
+
+  </a> 
+  
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
@@ -11,6 +16,7 @@
   <a href="https://www.npmjs.com/package/readme-md-generator">
     <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
   </a>
+  
 </p>
 
 > Offering anonymous chatting services for people who do not want to waste time configuring computer settings. ghostChat provides [onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>).
