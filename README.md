@@ -115,8 +115,6 @@ By contributing, you agree that your contributions will be licensed under its MI
 
 ## ⭐️ Show your support
 
-<a href="https://www.patreon.com/imthaghost">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
+<a href="https://www.buymeacoffee.com/imthaghost" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
 
 🏠 [Homepage](https://github.com/imthaghost/ghostChat)
