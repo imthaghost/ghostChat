@@ -21,7 +21,7 @@
 
 > Offering anonymous chatting services for people who do not want to waste time configuring computer settings. ghostChat provides [onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>).
 
-### Prerequisites
+### 💻 Prerequisites
 
 What things you need to install the software and how to install them
 
@@ -46,14 +46,14 @@ brew services start postgresql
 python3 manage.py runserver
 ```
 
-## Todo
+## :white_check_mark: Todo
 
 -   [x] Import Template
 -   [ ] User authentication
 -   [ ] Host server from EC2 instance
 -   [ ] Allow connected clients
 
-## Built With
+## :hammer: Built With
 
 -   [Django](https://www.djangoproject.com/) - Web Framework used
 
@@ -113,7 +113,7 @@ I'm again borrowing these from [Facebook's Guidelines](https://github.com/facebo
 -   2 spaces for indentation rather than tabs (or tabs that convert to spaces)
 -   You can try running `pipenv install autopep8 --dev` for style unification
 
-## License
+## 📝 License
 
 By contributing, you agree that your contributions will be licensed under its MIT License.
 
@@ -125,6 +125,6 @@ By contributing, you agree that your contributions will be licensed under its MI
     </tr>
 </table>
 
-## ⭐️ Show your support
+## ✨ Show your support
 
 <a href="https://www.buymeacoffee.com/imthaghost" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
