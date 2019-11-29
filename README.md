@@ -7,7 +7,7 @@
   </a>
 </p>
 
-> Offering anonymous chatting services for people do not want to waste time configuring computer settings. ghostChat provides [Onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>).
+> Offering anonymous chatting services for people do not want to waste time configuring computer settings. ghostChat provides [onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>).
 
 ### Prerequisites
 
@@ -109,7 +109,7 @@ By contributing, you agree that your contributions will be licensed under its MI
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/imthaghost"><img src="https://avatars3.githubusercontent.com/u/46610773?s=460&v=4" width="75px;" alt="Gary Frederick"/><br /><sub><b>Gary Frederick</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=kefranabg" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/imthaghost"><img src="https://avatars3.githubusercontent.com/u/46610773?s=460&v=4" width="75px;" alt="Gary Frederick"/><br /><sub><b>Gary Frederick</b></sub></a><br /><a href="https://github.com/imthaghost/ghostChat/commits/master" title="Code">💻</a></td>
     </tr>
 </table>
 
