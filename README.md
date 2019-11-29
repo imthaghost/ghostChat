@@ -7,17 +7,7 @@
   </a>
 </p>
 
-> Offering anonymous chatting services for people do not want to waste time configuring computer settings. ghostChat provides Onion routing configuration while establishing intial connection via clearnet.
-
-### 🏠 [Homepage](https://github.com/imthaghost/ghostChat)
-
-<!-- # ghostChat
-
-<img src="docs/media/icon.png" title="Icon"></a>
-
-## Description
-
-Offering anonymous chatting services for people do not want to waste time configuring computer settings. ghostChat provides [Onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>). -->
+> Offering anonymous chatting services for people do not want to waste time configuring computer settings. ghostChat provides [Onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>).
 
 ### Prerequisites
 
@@ -29,9 +19,9 @@ What things you need to install the software and how to install them
 - postgreSQL
 ```
 
-## Getting Started
+## 🚀 Getting Started
 
-### mac OS Mojave-Catalina
+### macOS Mojave 10.0+, Catalina 10.1+
 
 ```bash
 # clone the repo
@@ -55,7 +45,7 @@ python3 manage.py runserver
 
 -   [Django](https://www.djangoproject.com/) - Web Framework used
 
-## Contribution Guidlines
+## 🤝 Contribution Guidlines
 
 We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
@@ -115,16 +105,18 @@ I'm again borrowing these from [Facebook's Guidelines](https://github.com/facebo
 
 By contributing, you agree that your contributions will be licensed under its MIT License.
 
-## Author
+## Contributors
 
-👤 **Gary Frederick**
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/imthaghost"><img src="https://avatars3.githubusercontent.com/u/46610773?s=460&v=4" width="75px;" alt="Gary Frederick"/><br /><sub><b>Gary Frederick</b></sub></a><br /><a href="https://github.com/kefranabg/readme-md-generator/commits?author=kefranabg" title="Code">💻</a></td>
+    </tr>
+</table>
 
--   Github: [@imthaghost](https://github.com/imthaghost)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
+## ⭐️ Show your support
 
 <a href="https://www.patreon.com/imthaghost">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
+
+🏠 [Homepage](https://github.com/imthaghost/ghostChat)
