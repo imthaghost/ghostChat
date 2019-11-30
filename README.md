@@ -64,7 +64,7 @@ python3 manage.py runserver
 ## :hammer: Built With
 
 -   [Django](https://www.djangoproject.com/) - Web Framework used
--   [NGINX](https://www.nginx.com/)- web serving, reverse proxying, caching, load balancing, media streaming, and more.
+-   [nginx](https://www.nginx.com/)- web serving, reverse proxying, caching, load balancing, media streaming, and more.
 -   [Channels 2](https://channels.readthedocs.io/en/latest/) - Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called ASGI.
 -   [Redis](https://pypi.org/project/redis/) - Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.
 -   [daphne](https://pypi.org/project/daphne/) - Daphne is a HTTP, HTTP2 and WebSocket protocol server for ASGI and ASGI-HTTP, developed to power Django Channels.
