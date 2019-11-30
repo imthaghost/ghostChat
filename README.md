@@ -49,13 +49,24 @@ python3 manage.py runserver
 ## :white_check_mark: Todo
 
 -   [x] Import Template
--   [ ] User authentication
+-   [ ] Login/Signup Template
+-   [ ] Link postgreSQL database
+-   [ ] User Authentication
+-   [ ] single room/user chat
+-   [ ] allow each user to create chats with other users
+-   [ ] Allow client connections with Websockets
+-   [ ] Websockets with Nginx
 -   [ ] Host server from EC2 instance
--   [ ] Allow connected clients
+-   [ ] Tor websockets
 
 ## :hammer: Built With
 
 -   [Django](https://www.djangoproject.com/) - Web Framework used
+-   [Channels 2](https://channels.readthedocs.io/en/latest/) - Channels is a project that takes Django and extends its abilities beyond HTTP - to handle WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called ASGI.
+-   [Redis](https://pypi.org/project/redis/) - Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.
+-   [daphne](https://pypi.org/project/daphne/) - Daphne is a HTTP, HTTP2 and WebSocket protocol server for ASGI and ASGI-HTTP, developed to power Django Channels.
+-   [psycopg2-binary](https://pypi.org/project/psycopg2-binary/) - Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
+-   [django-rest-auth](https://django-rest-auth.readthedocs.io/en/latest/)
 
 ## 🤝 Contribution Guidlines
 
@@ -108,10 +119,29 @@ People _love_ thorough bug reports. I'm not even kidding.
 
 ## Use a Consistent Coding Style
 
-I'm again borrowing these from [Facebook's Guidelines](https://github.com/facebook/draft-js/blob/a9316a723f9e918afde44dea68b5f9f39b7d9b00/CONTRIBUTING.md)
-
+-   PEP 8 style unification
 -   2 spaces for indentation rather than tabs (or tabs that convert to spaces)
 -   You can try running `pipenv install autopep8 --dev` for style unification
+
+> Beautiful is better than ugly.
+> Explicit is better than implicit.
+> Simple is better than complex.
+> Complex is better than complicated.
+> Flat is better than nested.
+> Sparse is better than dense.
+> Readability counts.
+> Special cases aren't special enough to break the rules.
+> Although practicality beats purity.
+> Errors should never pass silently.
+> Unless explicitly silenced.
+> In the face of ambiguity, refuse the temptation to guess.
+> There should be one-- and preferably only one --obvious way to do it.
+> Although that way may not be obvious at first unless you're Dutch.
+> Now is better than never.
+> Although never is often better than _right_ now.
+> If the implementation is hard to explain, it's a bad idea.
+> If the implementation is easy to explain, it may be a good idea.
+> Namespaces are one honking great idea -- let's do more of those!
 
 ## 📝 License
 
