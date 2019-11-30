@@ -29,6 +29,8 @@ What things you need to install the software and how to install them
 - Python 3.4+
 - Pipenv
 - postgreSQL
+- Redis
+- Node
 ```
 
 ## 🚀 Getting Started
