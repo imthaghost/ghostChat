@@ -40,10 +40,12 @@ What things you need to install the software and how to install them
 ```bash
 # clone the repo
 git clone https://github.com/imthaghost/ghostChat
-# change into ghostChat directory
-cd ghostChat
+# start redis service
+brew servces start redis
 # instantiate postgre database
 brew services start postgresql
+#  change into ghostChat directory
+cd ghostChat
 # start django server
 python3 manage.py runserver
 ```
@@ -54,9 +56,9 @@ python3 manage.py runserver
 -   [x] Login/Signup Template
 -   [x] Link postgreSQL database
 -   [ ] User Authentication
--   [ ] single room/user chat
+-   [x] single room/user chat
 -   [ ] allow each user to create chats with other users
--   [ ] Allow client connections with Websockets
+-   [x] Allow client connections with Websockets
 -   [ ] Websockets with Nginx
 -   [ ] Host server from EC2 instance
 -   [ ] Tor websockets
