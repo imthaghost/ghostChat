@@ -68,9 +68,9 @@ python3 manage.py runserver
 -   [Redis](https://pypi.org/project/redis/) - Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.
 -   [daphne](https://pypi.org/project/daphne/) - Daphne is a HTTP, HTTP2 and WebSocket protocol server for ASGI and ASGI-HTTP, developed to power Django Channels.
 -   [psycopg2-binary](https://pypi.org/project/psycopg2-binary/) - Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
--   [django-rest-auth](https://django-rest-auth.readthedocs.io/en/latest/)
+-   [django-rest-auth](https://django-rest-auth.readthedocs.io/en/latest/) - library provides a set of REST API endpoints for registration, authentication (including social media authentication), password reset, retrieve and update user details, etc.
 -   [async-timeout](https://pypi.org/project/async-timeout/) - Timeout context manager for asyncio programs
--   [async-timeout](https://pypi.org/project/hiredis/) - Timeout context manager for asyncio programs
+-   [hiredis](https://pypi.org/project/hiredis/) - Python wrapper for hiredis
 -   [requests](https://pypi.org/project/requests/) - Python HTTP for Humans.
 -   [lazy-object-proxy](https://pypi.org/project/lazy-object-proxy/) - A fast and thorough lazy object proxy.
 -   [pytz](https://pypi.org/project/pytz/) - World timezone definitions, modern and historical
