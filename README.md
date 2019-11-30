@@ -51,8 +51,8 @@ python3 manage.py runserver
 ## :white_check_mark: Todo
 
 -   [x] Import Template
--   [ ] Login/Signup Template
--   [ ] Link postgreSQL database
+-   [x] Login/Signup Template
+-   [x] Link postgreSQL database
 -   [ ] User Authentication
 -   [ ] single room/user chat
 -   [ ] allow each user to create chats with other users
