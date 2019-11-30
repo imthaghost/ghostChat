@@ -60,7 +60,7 @@ python3 manage.py runserver
 -   [ ] allow each user to create chats with other users
 -   [x] Allow client connections with Websockets
 -   [ ] Websockets with Nginx
--   [ ] Host server from EC2 instance
+-   [x] Host server from EC2 instance
 -   [ ] Tor websockets
 
 ## :hammer: Built With
