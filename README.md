@@ -69,6 +69,11 @@ python3 manage.py runserver
 -   [daphne](https://pypi.org/project/daphne/) - Daphne is a HTTP, HTTP2 and WebSocket protocol server for ASGI and ASGI-HTTP, developed to power Django Channels.
 -   [psycopg2-binary](https://pypi.org/project/psycopg2-binary/) - Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
 -   [django-rest-auth](https://django-rest-auth.readthedocs.io/en/latest/)
+-   [async-timeout](https://pypi.org/project/async-timeout/) - Timeout context manager for asyncio programs
+-   [async-timeout](https://pypi.org/project/hiredis/) - Timeout context manager for asyncio programs
+-   [requests](https://pypi.org/project/requests/) - Python HTTP for Humans.
+-   [lazy-object-proxy](https://pypi.org/project/lazy-object-proxy/) - A fast and thorough lazy object proxy.
+-   [pytz](https://pypi.org/project/pytz/) - World timezone definitions, modern and historical
 
 ## 🤝 Contribution Guidlines
 
