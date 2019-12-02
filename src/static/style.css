@@ -570,18 +570,18 @@ body {
   #frame .content .messages ul li:nth-last-child(1) {
     margin-bottom: 20px;
   }
-  #frame .content .messages ul li.sent img {
+  #frame .content .messages ul li.replies img {
     margin: 6px 8px 0 0;
   }
-  #frame .content .messages ul li.sent p {
+  #frame .content .messages ul li.replies p {
     background: hsl(208,7%,46%);
     color: #f5f5f5;
   }
-  #frame .content .messages ul li.replies img {
+  #frame .content .messages ul li.sent img {
     float: right;
     margin: 6px 0 0 8px;
   }
-  #frame .content .messages ul li.replies p {
+  #frame .content .messages ul li.sent p {
     background: hsl(211,100%,58%);
     color: #f5f5f5;
     float: right;

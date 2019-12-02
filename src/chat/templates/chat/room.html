@@ -227,7 +227,7 @@
                             <img src="https://avatars2.githubusercontent.com/u/29741401?s=400&v=4" alt="" />
                             <div class="meta">
                                 <p class="name">Ben Lafferty</p>
-                                <p class="preview">Sorry bro I'm just an explore</p>
+                                <p class="preview"></p>
                             </div>
                         </div>
                     </li>
@@ -322,12 +322,13 @@
             var imgTag = document.createElement('img');
             var pTag = document.createElement('p');
             pTag.textContent = data.content;
-            imgTag.src = 'https://avatars3.githubusercontent.com/u/46610773?s=460&v=4';
 
-            if (author === username) {
-                msgListTag.className = 'sent';
+            if (author === username) {   
+		imgTag.src = 'https://avatars3.githubusercontent.com/u/46610773?s=460&v=4';
+		msgListTag.className = 'sent';
             } else {
                 msgListTag.className = 'replies';
+		imgTag.src = 'https://avatars3.githubusercontent.com/u/29741401?s=460&v=4';
             }
             msgListTag.appendChild(imgTag);
             msgListTag.appendChild(pTag);
