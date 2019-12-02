@@ -1,7 +1,7 @@
-from django.db import models
 from django.contrib.auth import get_user_model
+from django.db import models
 
-User = get_user_model()  # set django default user model
+User = get_user_model()
 
 
 class Message(models.Model):
@@ -13,5 +13,5 @@ class Message(models.Model):
     def __str__(self):
         return self.author.username
 
-    def last_10_messages(self):
-        return Message.objects.order_by('-timestamp'.all()[:10])
+    def last_10_messages():
+        return Message.objects.order_by('-timestamp').all()[:10]
