@@ -1,164 +1,3 @@
-<!-- {% load static %}
-<!DOCTYPE html>
-<html class=''>
-
-<head>
-    <link rel="canonical" href="https://codepen.io/emilcarlsson/pen/ZOQZaV?limit=all&page=74&q=contact+" />
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet'
-        type='text/css'>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
-    <link rel='stylesheet prefetch'
-        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
-    <link rel='stylesheet' href="{% static 'style.css' %}">
-</head>
-
-<body>
-
-    <div id="frame">
-        <div id="sidepanel">
-            <div id="profile">
-                <div class="wrap">
-                    <img id="profile-img" src="https://avatars3.githubusercontent.com/u/46610773?s=460&v=4"
-                        class="online" alt="" />
-                    <p>Ghost</p>
-                    <i class="fa fa-chevron-down expand-button" aria-hidden="true"></i>
-                    <div id="status-options">
-                        <ul>
-                            <li id="status-online" class="active"><span class="status-circle"></span>
-                                <p>Online</p>
-                            </li>
-                            <li id="status-away"><span class="status-circle"></span>
-                                <p>Away</p>
-                            </li>
-                            <li id="status-busy"><span class="status-circle"></span>
-                                <p>Busy</p>
-                            </li>
-                            <li id="status-offline"><span class="status-circle"></span>
-                                <p>Offline</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="expanded">
-                        <label for="twitter"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></label>
-                        <input name="twitter" type="text" value="mikeross" />
-                        <label for="twitter"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></label>
-                        <input name="twitter" type="text" value="ross81" />
-                        <label for="twitter"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></label>
-                        <input name="twitter" type="text" value="mike.ross" />
-                    </div>
-                </div>
-            </div>
-            <div id="search">
-                <label for=""><i class="fa fa-search" aria-hidden="true"></i></label>
-                <input type="text" placeholder="Search contacts..." />
-            </div>
-            <div id="contacts">
-                <ul>
-
-                    <li class="contact active">
-                        <div class="wrap">
-                            <span class="contact-status busy"></span>
-                            <img src="https://avatars2.githubusercontent.com/u/29741401?s=400&v=4" alt="" />
-                            <div class="meta">
-                                <p class="name">Bean Lafferty</p>
-                                <p class="preview">No sorry dude I'm only explore.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="bottom-bar">
-                <button id="addcontact"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i> <span>Add
-                        contact</span></button>
-                <button id="settings"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> <span>Settings</span></button>
-            </div>
-        </div>
-        <div class="content">
-            <div class="contact-profile">
-                <img src="https://avatars2.githubusercontent.com/u/29741401?s=400&v=4" alt="" />
-                <p>Bean Lafferty</p>
-
-            </div>
-            <div class="messages">
-                <ul>
-                    <li class="sent">
-                        <img src="https://avatars3.githubusercontent.com/u/46610773?s=460&v=4" alt="" />
-                        <p>Do you know how to link a tor socket to a nginx socket
-                        </p>
-                    </li>
-                    <li class="replies">
-                        <img src="https://avatars2.githubusercontent.com/u/29741401?s=400&v=4" alt="" />
-                        <p>No sorry dude I'm only explore.</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="message-input">
-                <div class="wrap">
-                    <input id="chat-message-input" type="text" placeholder="Write your message..." />
-                    <i class="fa fa-paperclip attachment" aria-hidden="true"></i>
-                    <button id="chat-message-submit" type="button" value="Send"><i class="fa fa-paper-plane"
-                            aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-    <script src="{% static 'main.js' %}"></script>
-    <script src="{% static 'reconnecting-websocket.js' %}"></script>
-    <script>
-        var roomName = {{ room_name_json }};
-
-        var chatSocket = new ReconnectingWebSocket(
-            'ws://' + window.location.host +
-            '/ws/chat/' + roomName + '/');
-
-        chatSocket.onmessage = function (e) {
-            var data = JSON.parse(e.data);
-            var message = data['message'];
-            var author = message['author'];
-            var msgListTag = document.createElement('li');
-            var imgTag = document.createElement('img');
-            var pTag = document.createElement('p');
-            pTag.textContent = message.content;
-            imgTag.src = 'https://avatars3.githubusercontent.com/u/46610773?s=460&v=4';
-            if (author === username) {
-                msgListTag.className = 'sent';
-            } else {
-                msgListTag.className = 'replies';
-            }
-            msgListTag.appendChild(imgTag);
-            msgListTag.appendChild(pTag);
-            document.querySelector('#chat-log').value += (message + '\n');
-        };
-
-        chatSocket.onclose = function (e) {
-            console.error('Chat socket closed unexpectedly');
-        };
-
-        document.querySelector('#chat-message-input').focus();
-        document.querySelector('#chat-message-input').onkeyup = function (e) {
-            if (e.keyCode === 13) { // enter, return
-                document.querySelector('#chat-message-submit').click();
-            }
-        };
-
-        document.querySelector('#chat-message-submit').onclick = function (e) {
-            console.log('onclick')
-            var messageInputDom = document.querySelector('#chat-message-input');
-            var message = messageInputDom.value;
-            chatSocket.send(JSON.stringify({
-                'message': message,
-                'command': 'fetch_messages',
-                'from': username
-            }));
-
-            messageInputDom.value = '';
-        };
-    </script>
-
-</body>
-
-</html> -->
 {% load static %}
 <!DOCTYPE html>
 <html>
@@ -251,15 +90,6 @@
             </div>
             <div class="messages">
                 <ul id="chat-log">
-                    {% comment %} <li class="sent">
-                        <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
-                        <p>Yo so do you know how to link this shit to Tor?
-                        </p>
-                    </li>
-                    <li class="replies">
-                        <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                        <p>No sorry I'm just an explore</p>
-                    </li> {% endcomment %}
                 </ul>
             </div>
             <div class="message-input">
@@ -282,6 +112,7 @@
         var chatSocket = new ReconnectingWebSocket(
             'ws://' + window.location.host +
             '/ws/chat/' + roomName + '/');
+
         chatSocket.onopen = function (e) {
             fetchMessages();
         }
@@ -323,12 +154,12 @@
             var pTag = document.createElement('p');
             pTag.textContent = data.content;
 
-            if (author === username) {   
-		imgTag.src = 'https://avatars3.githubusercontent.com/u/46610773?s=460&v=4';
-		msgListTag.className = 'sent';
+            if (author === username) {
+                imgTag.src = 'https://avatars3.githubusercontent.com/u/46610773?s=460&v=4';
+                msgListTag.className = 'sent';
             } else {
                 msgListTag.className = 'replies';
-		imgTag.src = 'https://avatars3.githubusercontent.com/u/29741401?s=460&v=4';
+                imgTag.src = 'https://avatars3.githubusercontent.com/u/29741401?s=460&v=4';
             }
             msgListTag.appendChild(imgTag);
             msgListTag.appendChild(pTag);
