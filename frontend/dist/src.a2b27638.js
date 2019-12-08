@@ -31730,7 +31730,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"src/containers/Chat.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"src/containers/Sidepanel/Sidepanel.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31739,6 +31739,100 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Sidepanel = function Sidepanel(props) {
+  return _react.default.createElement("div", {
+    id: "sidepanel"
+  }, _react.default.createElement("div", {
+    id: "profile"
+  }, _react.default.createElement("div", {
+    className: "wrap"
+  }, _react.default.createElement("img", {
+    id: "profile-img",
+    src: "https://avatars3.githubusercontent.com/u/46610773?s=460&v=4",
+    className: "online",
+    alt: ""
+  }), _react.default.createElement("p", null, "Ghost"), _react.default.createElement("i", {
+    className: "fa fa-chevron-down expand-button",
+    "aria-hidden": "true"
+  }), _react.default.createElement("div", {
+    id: "status-options"
+  }, _react.default.createElement("ul", null, _react.default.createElement("li", {
+    id: "status-online",
+    className: "active"
+  }, _react.default.createElement("span", {
+    className: "status-circle"
+  }), _react.default.createElement("p", null, "Online")), _react.default.createElement("li", {
+    id: "status-away"
+  }, _react.default.createElement("span", {
+    className: "status-circle"
+  }), _react.default.createElement("p", null, "Away")), _react.default.createElement("li", {
+    id: "status-busy"
+  }, _react.default.createElement("span", {
+    className: "status-circle"
+  }), _react.default.createElement("p", null, "Busy")), _react.default.createElement("li", {
+    id: "status-offline"
+  }, _react.default.createElement("span", {
+    className: "status-circle"
+  }), _react.default.createElement("p", null, "Offline")))), _react.default.createElement("div", {
+    id: "expanded"
+  }))), _react.default.createElement("div", {
+    id: "search"
+  }, _react.default.createElement("label", {
+    htmlFor: ""
+  }, _react.default.createElement("i", {
+    className: "fa fa-search",
+    "aria-hidden": "true"
+  })), _react.default.createElement("input", {
+    type: "text",
+    placeholder: "Search contacts..."
+  })), _react.default.createElement("div", {
+    id: "contacts"
+  }, _react.default.createElement("ul", null, _react.default.createElement("li", {
+    className: "contact active"
+  }, _react.default.createElement("div", {
+    className: "wrap"
+  }, _react.default.createElement("span", {
+    className: "contact-status busy"
+  }), _react.default.createElement("img", {
+    src: "https://avatars2.githubusercontent.com/u/29741401?s=400&v=4",
+    alt: ""
+  }), _react.default.createElement("div", {
+    className: "meta"
+  }, _react.default.createElement("p", {
+    className: "name"
+  }, "Ben Lafferty"), _react.default.createElement("p", {
+    className: "preview"
+  })))))), _react.default.createElement("div", {
+    id: "bottom-bar"
+  }, _react.default.createElement("button", {
+    id: "addcontact"
+  }, _react.default.createElement("i", {
+    className: "fa fa-user-plus fa-fw",
+    "aria-hidden": "true"
+  }), " ", _react.default.createElement("span", null, "Add contact")), _react.default.createElement("button", {
+    id: "settings"
+  }, _react.default.createElement("i", {
+    className: "fa fa-cog fa-fw",
+    "aria-hidden": "true"
+  }), " ", _react.default.createElement("span", null, "Settings"))));
+};
+
+var _default = Sidepanel;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/containers/Chat.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Sidepanel = _interopRequireDefault(require("./Sidepanel/Sidepanel"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31776,145 +31870,35 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         id: "frame"
+      }, _react.default.createElement(_Sidepanel.default, null), _react.default.createElement("div", {
+        className: "content"
       }, _react.default.createElement("div", {
-        id: "sidepanel"
-      }, _react.default.createElement("div", {
-        id: "profile"
-      }, _react.default.createElement("div", {
-        class: "wrap"
-      }, _react.default.createElement("img", {
-        id: "profile-img",
-        src: "https://avatars3.githubusercontent.com/u/46610773?s=460&v=4",
-        class: "online",
-        alt: ""
-      }), _react.default.createElement("p", null, "Ghost"), _react.default.createElement("i", {
-        class: "fa fa-chevron-down expand-button",
-        "aria-hidden": "true"
-      }), _react.default.createElement("div", {
-        id: "status-options"
-      }, _react.default.createElement("ul", null, _react.default.createElement("li", {
-        id: "status-online",
-        class: "active"
-      }, _react.default.createElement("span", {
-        class: "status-circle"
-      }), _react.default.createElement("p", null, "Online")), _react.default.createElement("li", {
-        id: "status-away"
-      }, _react.default.createElement("span", {
-        class: "status-circle"
-      }), _react.default.createElement("p", null, "Away")), _react.default.createElement("li", {
-        id: "status-busy"
-      }, _react.default.createElement("span", {
-        class: "status-circle"
-      }), _react.default.createElement("p", null, "Busy")), _react.default.createElement("li", {
-        id: "status-offline"
-      }, _react.default.createElement("span", {
-        class: "status-circle"
-      }), _react.default.createElement("p", null, "Offline")))), _react.default.createElement("div", {
-        id: "expanded"
-      }, _react.default.createElement("label", {
-        for: "twitter"
-      }, _react.default.createElement("i", {
-        class: "fa fa-facebook fa-fw",
-        "aria-hidden": "true"
-      })), _react.default.createElement("input", {
-        name: "twitter",
-        type: "text",
-        value: "mikeross"
-      }), _react.default.createElement("label", {
-        for: "twitter"
-      }, _react.default.createElement("i", {
-        class: "fa fa-twitter fa-fw",
-        "aria-hidden": "true"
-      })), _react.default.createElement("input", {
-        name: "twitter",
-        type: "text",
-        value: "ross81"
-      }), _react.default.createElement("label", {
-        for: "twitter"
-      }, _react.default.createElement("i", {
-        class: "fa fa-instagram fa-fw",
-        "aria-hidden": "true"
-      })), _react.default.createElement("input", {
-        name: "twitter",
-        type: "text",
-        value: "mike.ross"
-      })))), _react.default.createElement("div", {
-        id: "search"
-      }, _react.default.createElement("label", {
-        for: ""
-      }, _react.default.createElement("i", {
-        class: "fa fa-search",
-        "aria-hidden": "true"
-      })), _react.default.createElement("input", {
-        type: "text",
-        placeholder: "Search contacts..."
-      })), _react.default.createElement("div", {
-        id: "contacts"
-      }, _react.default.createElement("ul", null, _react.default.createElement("li", {
-        class: "contact active"
-      }, _react.default.createElement("div", {
-        class: "wrap"
-      }, _react.default.createElement("span", {
-        class: "contact-status busy"
-      }), _react.default.createElement("img", {
-        src: "https://avatars2.githubusercontent.com/u/29741401?s=400&v=4",
-        alt: ""
-      }), _react.default.createElement("div", {
-        class: "meta"
-      }, _react.default.createElement("p", {
-        class: "name"
-      }, "Ben Lafferty"), _react.default.createElement("p", {
-        class: "preview"
-      })))))), _react.default.createElement("div", {
-        id: "bottom-bar"
-      }, _react.default.createElement("button", {
-        id: "addcontact"
-      }, _react.default.createElement("i", {
-        class: "fa fa-user-plus fa-fw",
-        "aria-hidden": "true"
-      }), " ", _react.default.createElement("span", null, "Add contact")), _react.default.createElement("button", {
-        id: "settings"
-      }, _react.default.createElement("i", {
-        class: "fa fa-cog fa-fw",
-        "aria-hidden": "true"
-      }), " ", _react.default.createElement("span", null, "Settings")))), _react.default.createElement("div", {
-        class: "content"
-      }, _react.default.createElement("div", {
-        class: "contact-profile"
+        className: "contact-profile"
       }, _react.default.createElement("img", {
         src: "https://avatars2.githubusercontent.com/u/29741401?s=400&v=4",
         alt: ""
       }), _react.default.createElement("p", null, "Ben Lafferty"), _react.default.createElement("div", {
-        class: "social-media"
-      }, _react.default.createElement("i", {
-        class: "fa fa-facebook",
-        "aria-hidden": "true"
-      }), _react.default.createElement("i", {
-        class: "fa fa-twitter",
-        "aria-hidden": "true"
-      }), _react.default.createElement("i", {
-        class: "fa fa-instagram",
-        "aria-hidden": "true"
-      }))), _react.default.createElement("div", {
-        class: "messages"
+        className: "social-media"
+      })), _react.default.createElement("div", {
+        className: "messages"
       }, _react.default.createElement("ul", {
         id: "chat-log"
       })), _react.default.createElement("div", {
-        class: "message-input"
+        className: "message-input"
       }, _react.default.createElement("div", {
-        class: "wrap"
+        className: "wrap"
       }, _react.default.createElement("input", {
         id: "chat-message-input",
         type: "text",
         placeholder: "Write your message..."
       }), _react.default.createElement("i", {
-        class: "fa fa-paperclip attachment",
+        className: "fa fa-paperclip attachment",
         "aria-hidden": "true"
       }), _react.default.createElement("button", {
         id: "chat-message-submit",
-        class: "submit"
+        className: "submit"
       }, _react.default.createElement("i", {
-        class: "fa fa-paper-plane",
+        className: "fa fa-paper-plane",
         "aria-hidden": "true"
       }))))));
     }
@@ -31925,7 +31909,7 @@ function (_React$Component) {
 
 var _default = Chat;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./Sidepanel/Sidepanel":"src/containers/Sidepanel/Sidepanel.js"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -32004,7 +31988,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63056" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57172" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
