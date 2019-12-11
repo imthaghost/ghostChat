@@ -57,11 +57,11 @@ python3 manage.py runserver
 -   [x] Import Template
 -   [x] Login/Signup Template
 -   [x] Link postgreSQL database
--   [ ] User Authentication
+-   [x] User Authentication
 -   [x] single room/user chat
 -   [ ] allow each user to create chats with other users
 -   [x] Allow client connections with Websockets
--   [ ] Websockets with Nginx
+-   [x] Websockets with Nginx
 -   [x] Host server from EC2 instance
 -   [ ] Tor websockets
 
