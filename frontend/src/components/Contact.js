@@ -1,11 +1,11 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Contact = (props) => (
-    <NavLink to={`${props.chatURL}`} style={{color: '#fff'}}>
+const Contact = props => (
+    <NavLink to={`${props.chatURL}`} style={{ color: "#fff" }}>
         <li className="contact">
             <div className="wrap">
-                <span className={`contact-status ${props.status}`}></span>
+                <span className={`contact-status ${props.status}`} />
                 <img src={props.picURL} alt="" />
                 <div className="meta">
                     <p className="name">{props.name}</p>

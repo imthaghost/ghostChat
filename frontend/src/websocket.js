@@ -1,3 +1,5 @@
+import { SOCKET_URL } from "./settings";
+
 class WebSocketService {
   static instance = null;
   callbacks = {};
@@ -14,15 +16,11 @@ class WebSocketService {
   }
 
   connect(chatUrl) {
-    const path = `ws://127.0.0.1:8000/ws/chat/${chatUrl}/`;
-    console.log(path);
+    const path = `${SOCKET_URL}/ws/chat/${chatUrl}/`;
     this.socketRef = new WebSocket(path);
     this.socketRef.onopen = () => {
-      console.log('WebSocket open');
+      console.log("WebSocket open");
     };
-    // this.socketNewMessage(JSON.stringify({
-    //   command: 'fetch_messages'
-    // }));
     this.socketRef.onmessage = e => {
       this.socketNewMessage(e.data);
     };
@@ -45,17 +43,17 @@ class WebSocketService {
     if (Object.keys(this.callbacks).length === 0) {
       return;
     }
-    if (command === 'messages') {
+    if (command === "messages") {
       this.callbacks[command](parsedData.messages);
     }
-    if (command === 'new_message') {
+    if (command === "new_message") {
       this.callbacks[command](parsedData.message);
     }
   }
 
   fetchMessages(username, chatId) {
     this.sendMessage({
-      command: 'fetch_messages',
+      command: "fetch_messages",
       username: username,
       chatId: chatId
     });
@@ -63,7 +61,7 @@ class WebSocketService {
 
   newChatMessage(message) {
     this.sendMessage({
-      command: 'new_message',
+      command: "new_message",
       from: message.from,
       message: message.content,
       chatId: message.chatId
@@ -71,15 +69,14 @@ class WebSocketService {
   }
 
   addCallbacks(messagesCallback, newMessageCallback) {
-    this.callbacks['messages'] = messagesCallback;
-    this.callbacks['new_message'] = newMessageCallback;
+    this.callbacks["messages"] = messagesCallback;
+    this.callbacks["new_message"] = newMessageCallback;
   }
 
   sendMessage(data) {
     try {
       this.socketRef.send(JSON.stringify({ ...data }));
-    }
-    catch (err) {
+    } catch (err) {
       console.log(err.message);
     }
   }
@@ -87,7 +84,6 @@ class WebSocketService {
   state() {
     return this.socketRef.readyState;
   }
-
 }
 
 const WebSocketInstance = WebSocketService.getInstance();

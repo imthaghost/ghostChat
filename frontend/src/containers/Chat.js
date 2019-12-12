@@ -101,7 +101,7 @@ class Chat extends React.Component {
                 key={message.id}
                 style={{ marginBottom: arr.length - 1 === i ? '300px' : '15px' }}
                 className={message.author === currentUser ? 'sent' : 'replies'}>
-                <img src="http://emilcarlsson.se/assets/mikeross.png" />
+                <img src="https://avatars3.githubusercontent.com/u/46610773?s=460&v=4" />
                 <p>{message.content}
                     <br />
                     <small>
@@ -164,7 +164,7 @@ class Chat extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        username: state.username
+        username: state.auth.username
     }
 }
 
