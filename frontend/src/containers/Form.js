@@ -42,7 +42,7 @@ class HorizontalAddChatForm extends React.Component {
                     Authorization: `Token ${this.props.token}`
                 };
                 axios
-                    .post(`${HOST_URL}/chat/create/`, {
+                    .post("127.0.0.1:8000/chat/create/", {
                         messages: [],
                         participants: combined
                     })
