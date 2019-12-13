@@ -1,4 +1,4 @@
-let DEBUG = false;
+let DEBUG = true;
 let HOST_URL = "0.0.0.0:8000";
 let SOCKET_URL = "0.0.0.0:8000";
 if (DEBUG) {

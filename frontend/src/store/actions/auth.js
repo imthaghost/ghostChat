@@ -45,6 +45,7 @@ const headers = {
 };
 
 export const authLogin = (username, password) => {
+    console.log(username, password)
     return dispatch => {
         dispatch(authStart());
         axios.post(`${HOST_URL}/rest-auth/login/`, {
