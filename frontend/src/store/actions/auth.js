@@ -71,6 +71,7 @@ export const authSignup = (username, email, password1, password2) => {
     return dispatch => {
         dispatch(authStart());
         axios.post(`${HOST_URL}/rest-auth/registration/`, {
+            //mode: 'cors',
             headers: headers,
             username: username,
             email: email,
