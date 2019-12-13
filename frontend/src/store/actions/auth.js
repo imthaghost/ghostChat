@@ -41,7 +41,7 @@ export const checkAuthTimeout = expirationTime => {
 }
 const headers = {
     'Content-Type': 'application/json',
-    'access-control-allow-origin': '*'
+    'Access-Control-Allow-Origin': '*'
 };
 
 export const authLogin = (username, password) => {
