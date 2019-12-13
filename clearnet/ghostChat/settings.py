@@ -8,10 +8,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9nneu#^7_aai*(#(6_qiihu-^k-+%a86&vjh=_i9#(c4^8s51n'
-
+#SECRET_KEY = '9nneu#^7_aai*(#(6_qiihu-^k-+%a86&vjh=_i9#(c4^8s51n'
+SECRET_KEY = os.urandom(24)
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -147,6 +147,9 @@ REST_FRAMEWORK = {
 }
 CORS_ORIGIN_WHITELIST = (
     'localhost:1234',
+    'http://3.18.215.82',
+    '3.18.215.82',
+
 )
 
 ACCOUNT_EMAIL_REQUIRED = False
