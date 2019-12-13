@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to ghostChat 👋</h1>
+<h1 align="center">Welcome to ghostChat 👻</h1>
 <img align="center" src="docs/media/icon.png" title="Icon"></a>
 <p>
     <a href="https://www.npmjs.com/package/readme-md-generator">
@@ -13,9 +13,6 @@
    <a href="https://github.com/imthaghost/gitmoji-changelog">
     <img src="https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg" alt="gitmoji-changelog">
   </a>
-  <a href="https://www.npmjs.com/package/readme-md-generator">
-    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
-  </a>
   
 </p>
 
@@ -25,11 +22,12 @@
 
 ### 💻 Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to run the software
 
 ```bash
 - Python 3.4+
 - Pipenv
+- Brew
 - postgreSQL
 - Redis
 - Node
@@ -49,7 +47,11 @@ brew services start postgresql
 #  change into ghostChat directory
 cd ghostChat
 # start django server
-python3 manage.py runserver
+python manage.py runserver
+# in a new shell
+cd frontend
+# start node service
+npm start
 ```
 
 ## :white_check_mark: Todo
@@ -59,7 +61,7 @@ python3 manage.py runserver
 -   [x] Link postgreSQL database
 -   [x] User Authentication
 -   [x] single room/user chat
--   [ ] allow each user to create chats with other users
+-   [x] allow each user to create chats with other users
 -   [x] Allow client connections with Websockets
 -   [x] Websockets with Nginx
 -   [x] Host server from EC2 instance
@@ -82,19 +84,12 @@ python3 manage.py runserver
 
 ## 🤝 Contribution Guidlines
 
-We love your input! We want to make contributing to this project as easy and transparent as possible, whether it's:
 
--   Reporting a bug
--   Discussing the current state of the code
--   Submitting a fix
--   Proposing new features
--   Becoming a maintainer
-
-## We Develop with Github
+### Develop with Github
 
 We use github to host code, to track issues and feature requests, as well as accept pull requests.
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
+### We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
 
 Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
 
@@ -105,15 +100,15 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 5. Make sure your code lints.
 6. Issue that pull request!
 
-## Any contributions you make will be under the MIT Software License
+### Any contributions you make will be under the MIT Software License
 
 In short, when you submit code changes, your submissions are understood to be under the same [MIT License](http://choosealicense.com/licenses/mit/) that covers the project. Feel free to contact the maintainers if that's a concern.
 
-## Report bugs using Github's [issues](https://github.com/briandk/transcriptase-atom/issues)
+### Report bugs using Github's [issues](https://github.com/briandk/transcriptase-atom/issues)
 
 We use GitHub issues to track public bugs. Report a bug by [opening a new issue](); it's that easy!
 
-## Write bug reports with detail, background, and sample code
+### Write bug reports with detail, background, and sample code
 
 [This is an example](http://stackoverflow.com/q/12488905/180626) of a bug report I foun, and I think it's not a bad model. Here's [another example from Craig Hockenberry](http://www.openradar.me/11905408), an app developer whom I greatly respect.
 
@@ -129,7 +124,7 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 
 People _love_ thorough bug reports. I'm not even kidding.
 
-## Use a Consistent Coding Style
+### Use a Consistent Coding Style
 
 -   PEP 8 style unification
 -   2 spaces for indentation rather than tabs (or tabs that convert to spaces)
