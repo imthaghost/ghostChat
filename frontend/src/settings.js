@@ -1,4 +1,4 @@
-let DEBUG = false;
+let DEBUG = true;
 let HOST_URL = "http://3.18.215.82:8000";
 let SOCKET_URL = "http://3.18.215.82:8000";
 if (DEBUG) {
