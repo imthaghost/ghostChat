@@ -38,11 +38,16 @@ export const checkAuthTimeout = expirationTime => {
         }, expirationTime * 1000)
     }
 }
+const headers = {
+    'Content-Type': 'application/json',
+    'access-control-allow-origin': '*'
+};
 
 export const authLogin = (username, password) => {
     return dispatch => {
         dispatch(authStart());
         axios.post('http://127.0.0.1:8000/rest-auth/login/', {
+            headers: headers,
             username: username,
             password: password
         })
@@ -65,6 +70,7 @@ export const authSignup = (username, email, password1, password2) => {
     return dispatch => {
         dispatch(authStart());
         axios.post('http://127.0.0.1:8000/rest-auth/registration/', {
+            headers: headers,
             username: username,
             email: email,
             password1: password1,
