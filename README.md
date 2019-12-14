@@ -48,8 +48,8 @@ brew services start redis
 brew install tor
 # start tor services
 tor
-# change into ghostChat directory
-cd ghostChat
+# change into clearnet directory
+cd clearnet
 # create your own superuser
 python manange.py createsuperuser
 # start django server
