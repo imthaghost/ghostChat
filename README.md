@@ -53,6 +53,8 @@ python manange.py createsuperuser
 python manage.py runserver
 # in a new shell
 cd frontend
+# install parcel
+npm install parcel
 # start node service
 npm start
 ```
