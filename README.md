@@ -18,6 +18,8 @@
 
 > Offering anonymous chatting services for people who do not want to waste time configuring computer settings. ghostChat provides [onion routing](https://en.wikipedia.org/wiki/Onion_routing) configuration while establishing intial connection via [clearnet](<https://en.wikipedia.org/wiki/Clearnet_(networking)>).
 
+> Runnin at http://3.18.215.82:1234/ linux server
+
 ![Example](/docs/media/clean.png)
 
 ### 💻 Prerequisites
