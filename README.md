@@ -31,9 +31,10 @@ What things you need to run the software
 - postgreSQL
 - Redis
 - Node
+- Tor
 ```
 
-## 🚀 Getting Started
+## 🚀 Getting Started - Local
 
 ### macOS Mojave 10.0+, Catalina 10.1+
 
@@ -42,10 +43,12 @@ What things you need to run the software
 git clone https://github.com/imthaghost/ghostChat
 # start redis service
 brew servces start redis
-# instantiate postgre database
-brew services start postgresql
-#  change into ghostChat directory
+# start tor services
+tor
+# change into ghostChat directory
 cd ghostChat
+# create your own superuser
+python manange.py createsuperuser
 # start django server
 python manage.py runserver
 # in a new shell
@@ -53,6 +56,17 @@ cd frontend
 # start node service
 npm start
 ```
+## 🚀 Running - Development Server
+```bash
+# server
+You can go to ip address: http://3.18.215.82:1234/
+# credentials
+You can login with credentials:
+username: ghost
+password: ouoyou12
+```
+
+> Currently there is a bug, in order to create a chat with a new user you have to manually add them as a contact in the admin panel.
 
 ## :white_check_mark: Todo
 
@@ -65,7 +79,7 @@ npm start
 -   [x] Allow client connections with Websockets
 -   [x] Websockets with Nginx
 -   [x] Host server from EC2 instance
--   [ ] Tor websockets
+-   [x] Tor websockets
 
 ## :hammer: Built With
 
