@@ -31,7 +31,6 @@ What things you need to run the software
 - postgreSQL
 - Redis
 - Node
-- Tor
 ```
 
 ## 🚀 Getting Started - Local
@@ -42,7 +41,9 @@ What things you need to run the software
 # clone the repo
 git clone https://github.com/imthaghost/ghostChat
 # start redis service
-brew servces start redis
+brew services start redis
+# install tor
+brew install tor
 # start tor services
 tor
 # change into ghostChat directory
@@ -58,7 +59,7 @@ npm install parcel
 # start node service
 npm start
 ```
-## 🚀 Running - Development Server
+## 🚀 Deployment Server
 ```bash
 # server
 You can go to ip address: http://3.18.215.82:1234/
