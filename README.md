@@ -65,9 +65,12 @@ npm start
 ```bash
 # server
 You can go to ip address: http://3.18.215.82:1234/
-# credentials
-You can login with credentials:
+# credentials you can use for testing
+# super user
 username: ghost
+password: ouoyou12
+# non super user
+username: gary
 password: ouoyou12
 ```
 
